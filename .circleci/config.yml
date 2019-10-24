@@ -41,6 +41,9 @@ jobs:
 
   deploy:
     executor: node
+
+    working_directory: ~/repo
+
     steps:
       - restore_cache:
           keys:
